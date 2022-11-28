@@ -7,9 +7,9 @@ number = 0
 
 def inputValue():
   global number
-  number = int(input("What number do you want me to count to? "))
+  number = int(input("How many sheeps do you want me to count? "))
   while number < 0:
-    number = int(input("I can't count to a negative number! let's try again... "))
+    number = int(input("I can't count to a negative number of sheeps! let's try again... "))
     continue
 
 # Count to number given
@@ -18,7 +18,7 @@ def count():
   global x
   while x < number:
     x = x + 1
-    print(x)
+    print(x, "sheeps")
 
 def main():
   inputValue()
