@@ -1,10 +1,15 @@
 # Declare variable
 
 x = 0
+number = 0
 
 # Ask for input
 
-number = int(input("What number do you want me to count to? "))
+def inputValue():
+  global number
+  number = int(input("What number do you want me to count to? "))
+  if number < 0:
+    int(input("I can't count to a negative number! let's try again... "))
 
 # Count to number given
 
@@ -14,4 +19,8 @@ def count():
     x = x + 1
     print(x)
 
-count()
+def main():
+  inputValue()
+  count()
+
+main()
