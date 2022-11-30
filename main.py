@@ -1,16 +1,20 @@
 # Declare variables
 
 x = 0
-number = 0
+number = 0.
 
 # Ask for input
 
 def inputValue():
   global number
-  number = int(input("How many sheeps do you want me to count? "))
-  while number < 0:
-    number = int(input("I can't count to a negative number of sheeps! let's try again... "))
-    continue
+  print("How many sheeps do you want me to count?")
+  number = input()
+  isNumeric = number.isnumeric()
+  while not isNumeric:
+    print("I can't count to a negative number of sheeps! let's try again...")
+    number = input()
+    isNumeric = number.isnumeric()
+  number = int(number)
 
 # Count to number given
 
