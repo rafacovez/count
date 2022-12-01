@@ -1,10 +1,8 @@
 # Declare variables
-
 x = 0
-number = 0.
+number = 0
 
 # Ask for input
-
 def inputValue():
   global number
   print("How many sheeps do you want me to count?")
@@ -17,7 +15,6 @@ def inputValue():
   number = int(number)
 
 # Count to number given
-
 def count():
   global x
   while x < number:
