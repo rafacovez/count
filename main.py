@@ -5,12 +5,10 @@ number = 0
 # Ask for input
 def inputValue():
   global number
-  print("How many sheeps do you want me to count?")
-  number = input()
+  number = input("How many sheeps do you want me to count? ")
   isNumeric = number.isnumeric()
   while not isNumeric:
-    print("I can't count to a negative number of sheeps! let's try again...")
-    number = input()
+    number = input("I can't count to a negative number of sheeps! let's try again... ")
     isNumeric = number.isnumeric()
   number = int(number)
 
